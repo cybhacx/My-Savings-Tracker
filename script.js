@@ -1,13 +1,16 @@
-
-
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
+// Firebase Configuration Data
 const firebaseConfig = {
-  apiKey: "AIzaSyCbEMVKDY0SnsJgisw2oDVmRfFHsjW0vz0",
+  apiKey: "AIzaSyCbEMVKDY0Smsjgisw2oDVmRFhSjW8vz0",
+  authDomain: "my-savings-tracker-1f53d.firebaseapp.com",
+  projectId: "my-savings-tracker-1f53d",
+  storageBucket: "my-savings-tracker-1f53d.firebasestorage.app",
+  messagingSenderId: "711855188718",
+  appId: "1:711855188718:web:b02dcfd3fe1fc4295121ff"
+};
+
+// Initialize Firebase (Compat Version)
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
   authDomain: "my-savings-tracker-1f53d.firebaseapp.com",
   projectId: "my-savings-tracker-1f53d",
   storageBucket: "my-savings-tracker-1f53d.firebasestorage.app",
