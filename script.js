@@ -5,7 +5,8 @@ const firebaseConfig = {
   projectId: "my-savings-tracker-1f53d",
   storageBucket: "my-savings-tracker-1f53d.firebasestorage.app",
   messagingSenderId: "711855188718",
-  appId: "1:711855188718:web:b02dcfd3fe1fc4295121ff"
+  appId: "1:711855188718:web:b02dcfd3fe1fc4295121ff",
+  databaseURL: "https://my-savings-tracker-1f53d-default-rtdb.firebaseio.com"
 };
 
 // Initialize Firebase (Compat Version)
