@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-साल मनी सेविंग ट्रैकर</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💰 5-साल मनी सेविंग ट्रैकर</h1>
+        
+        <!-- डैशबोर्ड / समरी -->
+        <div class="dashboard">
+            <div class="card">
+                <h3>आज की बचत</h3>
+                <div class="input-group">
+                    <span>₹</span>
+                    <input type="number" id="dailyAmount" value="20" min="0">
+                </div>
+                <button id="checkInBtn">आज की अटेंडेंस लगाएं (Done)</button>
+            </div>
+            
+            <div class="card">
+                <h3>कुल जमा राशि</h3>
+                <p class="amount" id="totalSaved">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>इस महीने की बचत</h3>
+                <p class="amount" id="monthSaved">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>लक्ष्य प्रगति (%)</h3>
+                <p class="amount" id="progressPercent">0%</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- अटेंडेंस लॉग -->
+        <div class="log-section">
+            <h2>📅 हाल ही की अटेंडेंस लॉग</h2>
+            <ul id="attendanceLog">
+                <!-- जावास्क्रिप्ट के जरिए एंट्रीज यहाँ आएँगी -->
+            </ul>
+        </div>
+
+        <!-- अबाउट और कॉन्ट्रैक्ट सेक्शन -->
+        <div class="contract-section">
+            <h2>📜 बचत अनुबंध (Saving Contract)</h2>
+            <p><strong>अवधि:</strong> 5 वर्ष (5 Years Contract)</p>
+            <p><strong>नियम:</strong> प्रति दिन न्यूनतम ₹20 की बचत करना अनिवार्य है। यह राशि सीधे मुख्य खाते में सुरक्षित रखी जाएगी, यहाँ केवल उसकी दैनिक उपस्थिति (Attendance) दर्ज की जा रही है।</p>
+            
+            <div class="signature-container">
+                <div class="sig-box">
+                    <p>डिजिटल हस्ताक्षर (यूजर)</p>
+                    <canvas id="sigCanvas" width="300" height="100"></canvas>
+                    <br>
+                    <button id="clearSigBtn">हस्ताक्षर साफ करें</button>
+                </div>
+                <div class="sig-box">
+                    <p>स्वीकृति मोहर</p>
+                    <div class="seal">APPROVED BY RAVI</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
