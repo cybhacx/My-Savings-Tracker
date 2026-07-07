@@ -11,16 +11,6 @@ const firebaseConfig = {
 // Initialize Firebase (Compat Version)
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
-  authDomain: "my-savings-tracker-1f53d.firebaseapp.com",
-  projectId: "my-savings-tracker-1f53d",
-  storageBucket: "my-savings-tracker-1f53d.firebasestorage.app",
-  messagingSenderId: "711855188718",
-  appId: "1:711855188718:web:b02dcfd3fe1fc4295121ff"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-
 
 
 
